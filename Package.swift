@@ -11,24 +11,25 @@ let package = Package(
 	products: [
 		.library(
 			name: "XS2AiOS",
-			targets: ["XS2AiOS"]),
+			targets: ["XS2AiOS", "XS2AiOSNetService"]),
 	],
 	dependencies: [
 		.package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.1"),
 		.package(url: "https://github.com/ninjaprox/NVActivityIndicatorView.git", from: "5.1.1"),
-		.package(name: "XS2AiOSNetService", path: "netservice/")
 	],
 	targets: [
 		.target(
 			name: "XS2AiOS",
-			dependencies: ["SwiftyJSON", "NVActivityIndicatorView", "XS2AiOSNetService"],
+			dependencies: ["SwiftyJSON", "NVActivityIndicatorView"],
 			resources: [
 				.process("Resources")
 			]
 		),
 		.testTarget(
 			name: "XS2AiOSTests",
-			dependencies: ["XS2AiOS"]),
+			dependencies: ["XS2AiOS"]
+		),
+		.binaryTarget(name: "XS2AiOSNetService", path: "XS2AiOSNetService.xcframework"),
 	],
 	swiftLanguageVersions: [SwiftVersion.v5]
 )
