@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC43DDD02795801200FCE9A1 /* XS2AiOSNetService.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC43DDCF2795801200FCE9A1 /* XS2AiOSNetService.xcframework */; };
+		DC43DDD02795801200FCE9A1 /* XS2AiOSNetService.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC43DDCF2795801200FCE9A1 /* XS2AiOSNetService.xcframework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DC5228E1281C175300B607C7 /* TriggerTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5228E0281C175300B607C7 /* TriggerTextfield.swift */; };
 		DC5228E3281C178D00B607C7 /* XS2ATextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5228E2281C178D00B607C7 /* XS2ATextfield.swift */; };
 		DC6847BB278EDA2400A5054F /* XS2AiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DC6847BA278EDA2400A5054F /* XS2AiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
